@@ -1,3 +1,72 @@
-h1 {
-    color:aquamarine; 
+
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+header{
+    font-size: 20px;
+    color: black;
+
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+}
+h3{
+    font-size: 10px;
+
+}
+p{
+    font-size: 10px;
+}
+
+adress{
+    font-size: 10px;
+}
+#contacto{
+    color: grey
+}
+
+iframe{
+    display: block;
+    
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
+  }
+
+@media (min-width: 1000px) {
+    .main-head{
+        grid-column: col-start / span 12;
+
+    }
+    .main-nav {
+      grid-column: col-start / span 2;
+      grid-row: 2 / 4;
+    }
+    .content {
+      grid-column: col-start 3 / span 8;
+      grid-row: 2 / 4;
+    }
+    .side {
+      grid-column: col-start 10 / span 2;
+      grid-row: 2;
+    }
+    .ad {
+      grid-column: col-start 10 / span 2;
+      grid-row: 3;
+    }
+    .main-footer {
+      grid-column: col-start / span 12;
+      font-size: 20px;
+    }
+    nav ul {
+      flex-direction: column;
+      
+    }
+  }
